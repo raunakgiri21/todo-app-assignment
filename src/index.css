@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import "tailwindcss";
+
+@theme {
+  /* Typography */
+  --font-display: "Inter", "Segoe UI", sans-serif;
+  --font-sans: "Inter", "Segoe UI", sans-serif;
+
+  /* Brand and semantic colors */
+  --color-brand-blue: #4563e9;
+  --color-brand-blue-dark: #354ec5;
+  --color-blue-pale: #eef2ff;
+  --color-red: #d94d55;
+  --color-red-pale: #fff0f1;
+  --color-surface: #fafbff;
+  --color-ink: #1d1d1f;
+  --color-ink-light: #64666d;
+  --color-muted: #9da0aa;
+  --color-line: #e7e8ed;
+  --color-white: #ffffff;
+
+  /* Component geometry */
+  --radius-button: 4px;
+  --radius-input: 5px;
+  --radius-card: 5px;
+
+  /* Elevation */
+  --shadow-card: 0 2px 12px rgb(34 43 90 / 4%);
+  --shadow-button: 0 8px 18px rgb(69 99 233 / 24%);
+  --shadow-soft: 0 12px 30px rgb(29 44 131 / 18%);
+  --shadow-modal: 0 -12px 36px rgb(31 39 85 / 12%);
+}
+
+html {
+  min-width: 320px;
+  min-height: 100%;
+  background: var(--color-surface);
+}
+
+:root {
+  font-family: var(--font-sans);
+  color: var(--color-ink);
+  background: var(--color-surface);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: var(--color-surface);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img,
+svg,
+video,
+canvas {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+input,
+textarea,
+select {
+  color: inherit;
+}
